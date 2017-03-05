@@ -53,6 +53,7 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
     "classnames": "^2.2.5",
+    "codeclimate-test-reporter": "^0.4.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.2",
     "file-loader": "^0.10.1",
