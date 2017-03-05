@@ -1,1 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+
+html, body, #app, .app-container {
+    height: 100%;
+}
+
+.app-container {
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}

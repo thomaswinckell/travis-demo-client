@@ -4,6 +4,9 @@ import ResultGenerator from "./ResultGenerator";
 import ResultView from "../component/ResultView";
 import {JsArray} from "ts-json-definition";
 
+require("./App.scss");
+
+
 const pastResults = Result.fromJsArray<Result>(require<JsArray>("../data/pastResults.json")).getOrElse(() => []);
 
 export type AppProps = {};
@@ -27,8 +30,7 @@ export default class App extends React.Component<AppProps,AppState> {
 
     render() {
         return (
-            <div>
-                <h3>Generated lottery draw</h3>
+            <div className="app-container">
                 <ResultView result={this.state.generatedResult}/>
             </div>
         );
