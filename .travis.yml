@@ -15,3 +15,15 @@ after_success:
 addons:
   code_climate:
     repo_token: $CODE_CLIMATE_TOKEN
+
+notifications:
+  email:
+    recipients:
+      - thomas.winckell@gmail.com
+    on_success: never # default: change
+    on_failure: always # default: always
+  slack:
+    rooms:
+      - dev-factory-team:$SLACK_TOKEN#development
+    on_success: change # default: always
+    on_failure: always # default: always
