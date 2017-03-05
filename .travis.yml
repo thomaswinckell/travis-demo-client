@@ -13,8 +13,16 @@ deploy:
     secret_access_key: $AWS_SECRET_KEY
     bucket: "travis-demo-client"
     skip_cleanup: true
+    local_dir: ./build
     on:
       tags: true
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+    email: thomas.winckell@gmail.com
+    local_dir: ./build
+    on:
+      branch: master
 
 after_success:
   - codeclimate-test-reporter < ./coverage/lcov.info
