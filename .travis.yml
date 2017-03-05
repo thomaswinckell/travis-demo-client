@@ -22,11 +22,4 @@ notifications:
       - thomas.winckell@gmail.com
     on_success: never # default: change
     on_failure: always # default: always
-  slack:
-    rooms:
-      - $SLACK_TOKEN
-    on_success: always # default: always
-    on_failure: always # default: always
-    template:
-      - "%{repository} (%{commit}) : %{message} %{foo} "
-      - "Build details: %{build_url}"
+  slack: $SLACK_TOKEN
