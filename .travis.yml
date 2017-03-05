@@ -25,5 +25,5 @@ notifications:
   slack:
     rooms:
       - dev-factory-team:$SLACK_TOKEN#development
-    on_success: change # default: always
+    on_success: always # default: always
     on_failure: always # default: always
