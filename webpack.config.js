@@ -32,9 +32,7 @@ const sassLoaders = [{
 }, {
     loader : "css-loader",
     options : {
-        sourceMap : true,
-        importLoaders : 1,
-        localIdentName : "[name]-[hash:base64:2]"
+        sourceMap : true
     }
 }, {
     loader : "postcss-loader",
