@@ -1,6 +1,6 @@
 {
   "name": "@thomas.winckell/travis-demo-client",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Just a Travis CI demo with a client app",
   "repository": {
     "type": "git",
