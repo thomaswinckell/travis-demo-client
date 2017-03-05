@@ -61,7 +61,7 @@ module.exports = {
     },
     output:     {
         filename: '[name].js',
-        publicPath: '/',
+        publicPath: './',
         path : __dirname + '/build'
     },
     devtool:    'source-map',
