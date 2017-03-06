@@ -6,12 +6,11 @@ import Result from "../model/Result";
 export default class ResultGenerator {
 
     static generateNumber(pastNumbers : number[], min : number, max : number) : number {
-        const availableNumbers = range(min, max + 1).filter(n => pastNumbers.indexOf(n) === -1);
-        if(availableNumbers.length === 0) {
-            return random(min, max);
+        if(pastNumbers.length > 0) {
+            return pastNumbers[0];
+        } else {
+            return max;
         }
-        const index = random(0, availableNumbers.length - 1);
-        return availableNumbers[index];
     }
 
     static generate(pastResults : Result[]) : Result {
