@@ -18,12 +18,6 @@
   "keywords": [],
   "author": "Thomas Winckell",
   "license": "MIT",
-  "files": [
-    "**/*.js.map",
-    "**/*.js",
-    "**/*.json",
-    "**/*.css"
-  ],
   "main": "index.js",
   "types": "index.d.ts",
   "dependencies": {

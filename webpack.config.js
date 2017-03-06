@@ -14,8 +14,7 @@ let plugins = [];
 if ( target === 'start' ) {
     plugins.push(
         new webpackNotifier( { title: pkg.name } ),
-        new webpack.HotModuleReplacementPlugin()/*,
-         new webpack.optimize.CommonsChunkPlugin( { names: [ 'vendor', 'manifest' ] } )*/
+        new webpack.HotModuleReplacementPlugin()
     );
 }
 
@@ -43,12 +42,7 @@ const sassLoaders = [{
             ];
         }
     }
-}, /*{
-     loader : "resolve-url-loader",
-     options : {
-        sourceMap : true
-     }
- },*/ {
+} {
     loader : "sass-loader",
     options : {
         sourceMap : true
@@ -61,7 +55,7 @@ module.exports = {
     },
     output:     {
         filename: '[name].js',
-        publicPath: './',
+        publicPath: '/',
         path : __dirname + '/build'
     },
     devtool:    'source-map',
@@ -142,10 +136,6 @@ module.exports = {
             mobile:     true,
             template:   './index.html',
             title:      pkg.name
-        } ),
-
-        new copyWebpack( [
-            //{ from: './lib', to: 'lib' }
-        ] )
+        } )
     ].concat( plugins )
 };
