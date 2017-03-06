@@ -42,7 +42,7 @@ const sassLoaders = [{
             ];
         }
     }
-} {
+}, {
     loader : "sass-loader",
     options : {
         sourceMap : true
