@@ -43,4 +43,8 @@ notifications:
       - thomas.winckell@gmail.com
     on_success: never # default: change
     on_failure: always # default: always
-  slack: $SLACK_TOKEN
+  slack:
+    rooms:
+      - $SLACK_TOKEN
+      on_success: change # default: always
+      on_failure: always # default: always
