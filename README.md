@@ -3,3 +3,11 @@
 ##travis-demo-client
 
 Just a Travis CI demo 
+
+###Demo links
+
+AWS S3 : http://travis-demo-client.winckell.com.s3-website.eu-central-1.amazonaws.com/
+
+Github Pages : https://thomaswinckell.github.io/travis-demo-client/
+
+NPM : https://www.npmjs.com/package/@thomas.winckell/travis-demo-client
