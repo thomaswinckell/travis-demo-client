@@ -45,6 +45,6 @@ notifications:
     on_failure: always # default: always
   slack:
     rooms:
-      - $SLACK_TOKEN
+      - secure: $SLACK_TOKEN
       on_success: always # default: always
       on_failure: always # default: always
