@@ -11,3 +11,5 @@ Just a Travis CI demo
 [Github Pages](https://thomaswinckell.github.io/travis-demo-client/])
 
 [NPM](https://www.npmjs.com/package/@thomas.winckell/travis-demo-client)
+
+[Slides](http://prez-travis.winckell.com.s3-website.eu-central-1.amazonaws.com/)
